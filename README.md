@@ -68,10 +68,7 @@ wyldore-stillgrove/
 ├── engine/                 # Creature AI, bond graph, dimming driver, entropy system
 ├── render/                 # SceneCore render layer, glTF loading, procedural biome art
 ├── interaction/            # Hand gesture recognition, touchpad input routing
-└── docs/
-    ├── PRD.md              # Full Product Requirements Document
-    ├── CATALYST.md         # Traceability: pitch claim to file mapping
-    └── PRIVACY.md          # Privacy architecture
+└── docs/                   # Local reference — not version‑controlled
 ```
 
 ## Design Principles
@@ -126,28 +123,30 @@ Stillgrove inherits Aether's privacy-by-construction model. The platform layer e
 
 Zero backend server infrastructure. No mandatory accounts. No analytics telemetry. The biome is entirely local to the device.
 
-See `docs/PRIVACY.md` for the full model.
+See `docs/PRIVACY.md` (local reference) for the full model.
 
-## Documentation
+## Documentation (local reference)
 
-- [`docs/PRD.md`](docs/PRD.md) — Full Product Requirements Document
-- [`docs/CATALYST.md`](docs/CATALYST.md) — Catalyst submission traceability (pitch claim to file mapping)
-- [`docs/PRIVACY.md`](docs/PRIVACY.md) — Privacy architecture for Stillgrove
+- `docs/PRD.md` — Full Product Requirements Document
+- `docs/CATALYST.md` — Catalyst submission traceability (pitch claim to file mapping)
+- `docs/PRIVACY.md` — Privacy architecture for Stillgrove
+
+These documents live in `docs/` and are not version‑controlled per repo policy.
 
 ## Catalyst Submission
 
-This repo is open-sourced in support of the Android XR Developer Catalyst Program submission. The README and code intentionally reflect the current development stage (stage 3 of 10). It is not yet the shipping creature experience, it is the evidence that we already know how to build that experience.
+This repo is open-sourced in support of the Android XR Developer Catalyst Program submission. The README and code intentionally reflect the current development stage. It is not yet the shipping creature experience; it is the evidence that we already know how to build that experience.
 
-See `docs/CATALYST.md` for the mapping from each pitch deck claim to the file in this repo that substantiates it.
+The catalyst claim mapping and milestone plan are tracked in `docs/CATALYST.md` and `docs/TIMELINE.md` (local reference — not version‑controlled).
 
 ## Sister Products
 
 Stillgrove is one of two Android XR products Squeak Games is developing:
 
-- **Wyldore: Hushwild** — an ambient, audio-first wellness companion for Android XR audio and display glasses. On-the-go, passive, always-on. See [wyldore-hushwild](https://github.com/squeak-games/wyldore-hushwild).
-- **Wyldore: Stillgrove** (this repo) — a spatial creature-tending experience for XREAL Project Aura. At-home, active, hand-tracked.
+- **Wyldore: Hushwild** — an ambient, audio-first wellness companion for Android XR audio and display glasses. See [`wyldore-spatial-engine`](https://github.com/squeak-games/wyldore-spatial-engine).
+- **Wyldore: Stillgrove** (this repo) — a spatial creature-tending experience for XREAL Project Aura.
 
-Both products share the [Aether](https://github.com/squeak-games/aether) platform. Together they create a continuous cycle of care: the creature that walks with you through morning traffic (Hushwild) inhabits the same mythic ecosystem you tend with your hands at home (Stillgrove).
+Both products share the [Aether](https://github.com/squeak-games/aether) platform.
 
 ## License
 
@@ -155,7 +154,8 @@ Apache 2.0. See [LICENSE](LICENSE).
 
 ## Status
 
-Under active development. Committed 2026, ahead of Catalyst Program submission. Further commits track the milestone plan in the PRD (`docs/PRD.md`, section 13).
+Multi-module scaffold compiling. Tagged [`v0.0.1-scaffold`](https://github.com/squeak-games/wyldore-stillgrove/releases/tag/v0.0.1-scaffold).
+Future commits track the milestone plan in `docs/TIMELINE.md`.
 
 ---
 
