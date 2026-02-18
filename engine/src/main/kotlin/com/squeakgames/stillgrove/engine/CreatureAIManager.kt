@@ -1,5 +1,11 @@
 package com.squeakgames.stillgrove.engine
 
 class CreatureAIManager {
-    // Per-species finite state machines, bond graph, colony detection, movement planning.
+    val fsm = CreatureFSM()
+
+    fun tick(careLevel: Float, hoursSinceLastTending: Float) {
+        fsm.advance(careLevel, hoursSinceLastTending)
+    }
+
+    fun currentState(): CreatureState = fsm.state
 }
