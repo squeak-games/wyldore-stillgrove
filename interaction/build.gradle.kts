@@ -28,4 +28,6 @@ dependencies {
     implementation(project(":engine"))
     implementation(libs.androidx.xr.scenecore)
     implementation(libs.coroutines.core)
+
+    testImplementation(libs.junit)
 }
