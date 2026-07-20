@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.hilt.android)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -28,6 +30,10 @@ dependencies {
     implementation(project(":engine"))
     implementation(libs.androidx.xr.scenecore)
     implementation(libs.coroutines.core)
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 
+    testImplementation(project(":engine"))
     testImplementation(libs.junit)
+    testImplementation(libs.coroutines.test)
 }
